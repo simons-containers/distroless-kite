@@ -1,3 +1,7 @@
+![Latest](https://ghcr-badge.egpl.dev/simons-containers/distroless-kite/latest_tag?ignore=latest,sha256*&label=latest)  
+![Size](https://ghcr-badge.egpl.dev/simons-containers/distroless-kite/size?tag=latest)  
+![Tags](https://ghcr-badge.egpl.dev/simons-containers/distroless-kite/tags?ignore=latest,sha256*)  
+
 # Distroless Kite container
 
 Bare-bones distroless Kite container image.
