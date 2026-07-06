@@ -16,20 +16,6 @@ docker run -it --rm \
   ghcr.io/simons-containers/distroless-kite:latest
 ```
 
-## Building
-
-| Arg | Description |
-|---|---|
-| `KITE_VERSION` | Version of Kite to use
-
-Build container using build-args from versions.yaml:
-
-```bash
-docker build -t \
-  distroless-kite:$(yq -r .kite versions.yaml) \
-  $(yq -r 'to_entries | .[] | "--build-arg \(.key | ascii_upcase)_VERSION=\(.value)"' versions.yaml) -f Containerfile .
-```
-
 ## License
 
 Repository contents (e.g., `Containerfile`, build scripts, and configuration) are licensed under the **MIT License**.
