@@ -1,7 +1,7 @@
-FROM archlinux:base-devel-20260308.0.497099 AS builder
+FROM cgr.dev/chainguard/curl:latest-dev AS builder
 
 ARG KITE_VERSION
-ARG KITE_RELEASE=https://github.com/kite-org/kite/releases/download/v${KITE_VERSION}/kite-amd64-v${KITE_VERSION}.tar.gz
+ARG KITE_RELEASE
 
 WORKDIR /extract/kite
 RUN curl --silent --show-error --location --output kite.tar.gz \
