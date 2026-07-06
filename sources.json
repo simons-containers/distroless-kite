@@ -1,0 +1,9 @@
+{
+  "kite": {
+    "version": "0.13.0",
+    "purl": "pkg:generic/kite",
+    "release": {
+      "url_pattern": "https://github.com/kite-org/kite/releases/download/v{version}/kite-amd64-v{version}.tar.gz"
+    }
+  }
+}
