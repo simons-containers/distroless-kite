@@ -8,7 +8,7 @@ RUN curl --silent --show-error --location --output kite.tar.gz \
   "${KITE_RELEASE}" \
   && tar xf kite.tar.gz
 
-FROM ghcr.io/simons-containers/distroless-glibc:2.43
+FROM ghcr.io/simons-containers/distroless-glibc:2.44
 ARG KITE_VERSION
 
 COPY --from=builder /extract/kite/bin/kite-amd64 /usr/bin/kite
