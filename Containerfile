@@ -11,7 +11,8 @@ RUN curl --silent --show-error --location --output kite.tar.gz \
 FROM ghcr.io/simons-containers/distroless-glibc:2.44
 ARG KITE_VERSION
 
-COPY --from=builder /extract/kite/bin/kite-amd64 /usr/bin/kite
+COPY --from=builder /extract/kite/kite /usr/bin/kite
+COPY --from=builder /extract/kite/libghostty-vt.so /usr/lib/libghostty-vt.so
 
 WORKDIR /var/lib/kite
 ENV HOME=/var/lib/kite
